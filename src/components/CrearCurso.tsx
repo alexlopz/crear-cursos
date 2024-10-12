@@ -6,7 +6,8 @@ const CrearCurso = () => {
   const [descripcion, setDescripcion] = useState("");
   const [succes, setSucces] = useState(false);
 
-  const handleSubmit = async (e) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     const payload = {
